@@ -1,0 +1,17 @@
+package com.example.ashfielr.tictactoeweb.controllers;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+// Combines these two annotations:
+// @Controller
+// @ResponeBody
+public class GreetingController {
+	
+	@RequestMapping(path = "/greeting", method = RequestMethod.GET)
+	public String getGreeting() {
+		return "Hello World";
+	}
+}
