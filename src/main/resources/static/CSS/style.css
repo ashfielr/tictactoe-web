@@ -5,7 +5,15 @@ body {
 }
 
 .gridButton {
+	cursor: pointer;
 	font-size: 100px;
+	background-color: white;
+  	color: black;
+}
+
+.gridButton:hover {
+	background-color: black;
+	color: white;
 }
 
 .grid {
